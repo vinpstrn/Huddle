@@ -4,7 +4,7 @@
   "description": "Huddle landing page with coded decorative elements",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +15,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
+  },
+  "homepage": "https://vinpstrn.github.io/Huddle",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
