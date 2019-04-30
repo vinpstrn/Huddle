@@ -1,0 +1,21 @@
+// BUTTONS
+.btn {
+    @include flex-center(row);
+    text-decoration: none;
+    border: none;
+    color: $color-gray-light;
+    font-size: 1.3rem;
+}
+
+.btn-pink {
+    background-color: $color-primary;
+}
+
+// Typography
+.txt-dark {
+    color: $color-dark;
+}
+
+.txt-light {
+    color: $color-gray;
+}
