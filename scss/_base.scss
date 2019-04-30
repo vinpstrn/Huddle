@@ -29,7 +29,7 @@ body {
 
 // ------------------------------------------ NAV
 .nav {
-    padding: 5rem 8rem 0 5rem;
+    padding: 5rem 8rem 0 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,5 +153,106 @@ body {
         height: 5.5rem;
         width: 28rem;
         border-radius: 3px;
+    }
+}
+
+// ------------------------------------------ FOOTER
+.footer {
+    background-color: $color-dark;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    color: $color-gray-light;
+
+
+    &__logo {
+        fill: $color-white;
+        display: inline-block;
+        margin-bottom: 3rem;
+    }
+
+    &__logo-box {
+        display: flex;
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: $color-gray-light;
+        display: inline-block;
+    }
+
+    &__copyright {
+        margin-top: 2.5rem;
+        font-size: 1.3rem;
+    }
+
+    &__box {
+        display: flex;
+
+        & > * {
+            flex: 1;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 0 50%;
+    }
+
+    &__link {
+        color: inherit;
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+
+    &__subscription {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subscribe {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    input[type=text] {
+        border: none;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        font-family: inherit;
+    }
+
+    &__btn {
+        @include flex-center(row);
+        height: 4rem;
+        width: 16rem;
+        border-radius: 3px;
+        align-self: flex-end;
+    }
+    
+    &__frontendmentor {
+        text-align: center;
+        margin-top: 3rem;
+
+        a {
+            text-decoration: none;
+            color: $color-primary;
+        }
     }
 }
