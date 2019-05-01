@@ -273,13 +273,14 @@ body {
         height: auto;
 
         @media (max-width: 69.38em) { // 1100px
-            width: 60%;
+            width: 90%;
             margin: 0 auto;
         }
 
-        @media (max-width: 23.44em) { // 375px
-            margin: 5rem auto 0 auto;
+        @media (max-width: 48em) { // 768px
+            width: 100%;
         }
+    
     }
 
     &__info-box {
